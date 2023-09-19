@@ -35,7 +35,3 @@ export type UnionToIntersection<U> = (
 ) extends (k: infer I) => void
 	? I
 	: never;
-
-export type Prettify<T> = {
-	[K in keyof T]: T[K];
-} & {};
